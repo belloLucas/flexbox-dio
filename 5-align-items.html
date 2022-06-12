@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Items</title>
+
+    <style>
+        body{
+            background-color: #cacaca;
+            font-family: Verdana;
+        }
+        .container{
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1; /* Cuida da distribuição de tamanho dos itens */
+        }
+        
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    <h3>Center</h3>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Stretch</h3>
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Flex Start</h3>
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Flex End</h3>
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Baseline</h3>
+    <section class="container baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h2>Column</h2>
+    <h3>Center</h3>
+    <section class="container column center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Stretch</h3>
+    <section class="container column stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Flex Start</h3>
+    <section class="container column flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Flex End</h3>
+    <section class="container column flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Baseline</h3>
+    <section class="container column baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </section>
+
+    <h3>Alinhando conteudo inteiro no meio de um elemento</h3>
+    <section class="container center central">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum ipsum non velit lobortis posuere.</div>
+    </section>
+</body>
+</html>
