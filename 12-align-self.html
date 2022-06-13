@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+
+    <style>
+        body{
+            background-color: #cacaca;
+            font-family: Verdana;
+        }
+
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+        
+        .item{
+            background-color: blueviolet;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .container-align{
+            align-items: center;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .flex-start{
+            align-self: flex-start;
+        }
+
+        .flex-end{
+            align-self: flex-end;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Row</h2>
+    <h3>Align-Self: Auto (Align-items: Center)</h3>
+    <section class="container container-align">
+        <div class="item auto">Teste</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item auto">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Mixed</h3>
+    <section class="container container-align">
+        <div class="item center">Teste</div>
+        <div class="item flex-start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item flex-end">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Flex-start</h3>
+    <section class="container">
+        <div class="item flex-start">Teste</div>
+        <div class="item flex-start">123</div>
+        <div class="item flex-start">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item flex-start">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Flex-end</h3>
+    <section class="container">
+        <div class="item flex-end">Teste</div>
+        <div class="item flex-end">123</div>
+        <div class="item flex-end">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item flex-end">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Center</h3>
+    <section class="container">
+        <div class="item center">Teste</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item center">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Stretch</h3>
+    <section class="container">
+        <div class="item stretch">Teste</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item stretch">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Baseline</h3>
+    <section class="container">
+        <div class="item baseline">Teste</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item baseline">Teste 2</div>
+    </section>
+
+    <h2>Column</h2>
+    <h3>Align-Self: Auto (Align-items: Center)</h3>
+    <section class="container column container-align">
+        <div class="item auto">Teste</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item auto">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Mixed</h3>
+    <section class="container column container column-align">
+        <div class="item center">Teste</div>
+        <div class="item flex-start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item flex-end">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Flex-start</h3>
+    <section class="container column">
+        <div class="item flex-start">Teste</div>
+        <div class="item flex-start">123</div>
+        <div class="item flex-start">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item flex-start">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Flex-end</h3>
+    <section class="container column">
+        <div class="item flex-end">Teste</div>
+        <div class="item flex-end">123</div>
+        <div class="item flex-end">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item flex-end">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Center</h3>
+    <section class="container column">
+        <div class="item center">Teste</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item center">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Stretch</h3>
+    <section class="container column">
+        <div class="item stretch">Teste</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item stretch">Teste 2</div>
+    </section>
+
+    <h3>Align-Self: Baseline</h3>
+    <section class="container column">
+        <div class="item baseline">Teste</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem ipsum dolor sit amet, consectetur</div>
+        <div class="item baseline">Teste 2</div>
+    </section>
+</body>
+</html>

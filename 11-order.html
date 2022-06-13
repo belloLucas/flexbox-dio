@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+    <style>
+        body{
+            background-color: #cacaca;
+            font-family: Verdana;
+        }
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            flex: 1;
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .o1{
+            order: 1;
+        }
+
+        .o2{
+            order: 2;
+        }
+
+        .o3{
+            order: 3;
+        }
+
+        .o4{
+            order: 4;
+        }
+
+        .o5{
+            order: 5;
+        }
+
+        .o6{
+            order: 6;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    <h3>Order: 0</h3>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h3>Order: Misturado</h3>
+    <div class="container">
+        <div class="item o6">1</div>
+        <div class="item o5">2</div>
+        <div class="item o4">3</div>
+        <div class="item o2">4</div>
+        <div class="item o3">Teste 5</div>
+        <div class="item o1">Teste 6</div>
+    </div>
+
+    <h2>Column</h2>
+    <h3>Order: 0</h3>
+    <div class="container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+    <h3>Order: Misturado</h3>
+    <div class="container column">
+        <div class="item o6">1</div>
+        <div class="item o5">2</div>
+        <div class="item o4">3</div>
+        <div class="item o2">4</div>
+        <div class="item o3">Teste 5</div>
+        <div class="item o1">Teste 6</div>
+    </div>
+</body>
+</html>

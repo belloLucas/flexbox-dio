@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex</title>
+    <style>
+        body{
+            background-color: #cacaca;
+            font-family: Verdana;
+        }
+
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 400px;
+        }
+
+        .item{
+            margin: 5px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            color: white;
+            text-align: center;
+        }
+
+        .flex-1{
+            flex: 1;
+            /* flex-grow: 1; flex-shrink: 1; flex-basis: 0; */
+        }
+
+        .flex-2{
+            flex: 2;
+            /* flex-grow: 2; flex-shrink: 1; flex-basis: 0; */
+        }
+
+        .width{
+            width: 200px;
+            /* min-width: 250px; */
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex: 1</h3>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">Teste</div>
+        <div class="item flex-1">Teste 2</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">Teste 3</div>
+    </div>
+
+    <h3>Flex: Mix </h3>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">Teste</div>
+        <div class="item flex-2">Teste 2</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">Teste 3</div>
+    </div>
+
+    <h3>Width: Ignorado </h3>
+    <div class="container">
+        <div class="item flex-1 width">A</div>
+        <div class="item flex-2 width">Teste</div>
+        <div class="item flex-2 width">Teste 2</div>
+        <div class="item flex-1 width">D</div>
+        <div class="item flex-1 width">Teste 3</div>
+    </div>
+</body>
+</html>
